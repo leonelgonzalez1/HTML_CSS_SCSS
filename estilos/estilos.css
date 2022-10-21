@@ -384,9 +384,8 @@ footer{
 
 /* contacto */
 .guarda__iconos{
-    height: 100%;
+    height: 100vh;
     flex-direction: column;
-}
 }
 
 
@@ -431,4 +430,5 @@ footer{
     100%{
         transform:rotate(360deg);
     }
+}
 }
