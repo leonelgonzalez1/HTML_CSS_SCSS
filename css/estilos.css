@@ -10,11 +10,17 @@ a {
   text-decoration: none;
 }
 
+.centrado, .pack, .arriba__list, .hola__titulo, .guarda__iconos, .contacto__t, footer, .mejor__con, .contenedor__texto, main .mejor__con, main .contenedor__texto { /* EXTEND */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* -------------------------------------------------------------------------------------------- */
 header {
   background-color: #4e3b31;
   width: 100%;
-  height: 100%;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +39,7 @@ header .logo__nombre {
   color: bisque;
 }
 header .letras__enlace {
-  font-weight: 600;
+  font-size: 20px;
   margin-right: 35px;
   margin-left: 35px;
   color: bisque;
@@ -51,16 +57,10 @@ main {
 }
 main .contenedor__texto {
   height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 main .mejor__con {
   height: 80px;
   width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: all 3s;
 }
 main .mejor__con:hover {
@@ -72,7 +72,7 @@ main .mejor__letras {
   font-size: 40px;
   transition: all 4s;
 }
-main .mejor__letras:hover {
+main .mejor__letras:hover { /* NESTING para no escribir de nuevo el nombre */
   color: #fee8b6;
   transform: scale(1.2);
   transform: rotatex(360deg);
@@ -98,7 +98,7 @@ main .contenedor__texto2 {
 }
 main .caja__texto {
   width: 100%;
-  height: 100%;
+  height: 200px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -115,17 +115,11 @@ main .nombre {
 /* ------------------------ */
 .contenedor__texto {
   height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .mejor__con {
   height: 80px;
   width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: all 3s;
 }
 
@@ -168,6 +162,8 @@ main .nombre {
   width: 100%;
   height: 500px;
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .caja__texto {
@@ -192,9 +188,6 @@ footer {
   background-color: #372825;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 footer .footer__texto {
   color: bisque;
@@ -211,83 +204,7 @@ footer .final__texto {
 
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
-/*pagina 2 contacto*/
-.contacto__t {
-  height: 200px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contacto__t .contacto__arriba {
-  color: #8f3f11;
-}
-
-.contacto__inicio {
-  color: #8f3f11;
-  height: 700px;
-  align-items: center;
-}
-
-/* ------------------------ */
-.guarda__iconos {
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.guarda__iconos .iconosw {
-  height: 50px;
-  width: 50px;
-}
-.guarda__iconos .iconos {
-  margin: 40px;
-  text-align: center;
-  color: #8f3f11;
-}
-.guarda__iconos .iconos .iconos:hover {
-  animation: girar 1s;
-  animation-iteration-count: infinite;
-}
-
-/* -------------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------------- */
-/* pagina 3 productos */
-.producto__ja {
-  background-color: #fee8b6;
-}
-.producto__ja .sections {
-  color: #86380f;
-  background-color: #fee8b6;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.producto__ja .sections .txt__principal {
-  flex-wrap: wrap;
-  text-align: center;
-}
-.producto__ja .sections .list__principal {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  height: 100%;
-}
-.producto__ja .sections .contenedor__img--principal {
-  background-color: #fee8b6;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.producto__ja .sections .contenedor__img--principal .principal__img {
-  background-color: #4e3b31;
-  height: 200px;
-  width: 200px;
-}
-
-/* -------------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------------- */
-/* pagina 4 nosotros */
+/* pagina 2 nosotros */
 .nosotros__grid {
   display: grid;
   grid-template-areas: "c1 c2" "c3 c4";
@@ -323,13 +240,82 @@ footer .final__texto {
 
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
+/* pagina 3 productos */
+.producto__ja {
+  background-color: #fee8b6;
+}
+.producto__ja .sections {
+  color: #86380f;
+  background-color: #fee8b6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.producto__ja .sections .txt__principal {
+  flex-wrap: wrap;
+  text-align: center;
+}
+.producto__ja .sections .list__principal {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.producto__ja .sections .contenedor__img--principal {
+  background-color: #fee8b6;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-bottom: solid black 2px;
+}
+.producto__ja .sections .contenedor__img--principal .principal__img {
+  background-color: #4e3b31;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/*pagina 4 contacto*/
+.contacto__t {
+  height: 200px;
+  width: 100%;
+}
+.contacto__t .contacto__arriba {
+  color: #8f3f11;
+}
+
+.contacto__inicio {
+  color: #8f3f11;
+  height: 700px;
+  align-items: center;
+}
+
+/* ------------------------ */
+.guarda__iconos {
+  height: 250px;
+}
+.guarda__iconos .iconos {
+  margin: 40px;
+  text-align: center;
+  color: #8f3f11;
+}
+.guarda__iconos .iconos:hover {
+  animation: girar 1s;
+  animation-iteration-count: infinite;
+}
+.guarda__iconos .iconosw {
+  height: 50px;
+  width: 50px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
 /* pagina 5 promociones */
 .hola__titulo {
   background-color: #fee8b6;
   height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .hola__titulo .hola__letras {
   color: #86380f;
@@ -347,17 +333,11 @@ footer .final__texto {
 .arriba__list {
   color: whitesmoke;
   background-color: #4e3b31;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .pack {
   height: 150px;
   background-color: #fee8b6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .pack .list_packs {
   list-style-type: none;
@@ -369,18 +349,20 @@ footer .final__texto {
   /* index */
   header {
     flex-direction: column;
-    width: 25;
+    height: 150px;
+    justify-content: center;
   }
   .logo {
     padding-bottom: 30px;
     margin-right: 30px;
+    padding-bottom: 0;
   }
   .letras__enlace {
     margin-right: 20px;
   }
   /* ------------ */
   .contenedor__texto {
-    height: 200px;
+    height: 400px;
     width: 100%;
   }
   .mejor__letras {
