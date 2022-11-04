@@ -1,0 +1,28 @@
+{
+  "name": "pre-entrega2gonzalez",
+  "version": "1.0.0",
+  "description": "trabajo de coderhause",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonelgonzalez1/Pre-entrega2-Gonzalez.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Gonzalez Leonel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonelgonzalez1/Pre-entrega2-Gonzalez/issues"
+  },
+  "homepage": "https://github.com/leonelgonzalez1/Pre-entrega2-Gonzalez#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.56.0"
+  }
+}
