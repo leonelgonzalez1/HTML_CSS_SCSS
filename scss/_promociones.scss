@@ -1,0 +1,34 @@
+/* pagina 5 promociones */
+
+.hola__titulo{
+    background-color:#fee8b6;
+    height: 400px;
+    @include centrado;
+    .hola__letras{
+        color:#86380f;
+        font-size:60px ;
+        text-align: center;
+    }
+}
+.chau__letras{
+    color:#86380f;
+    font-size:40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.arriba__list{
+    color: whitesmoke;
+    background-color: #4e3b31;
+    @include centrado;
+    }
+
+.pack{
+    height: 150px;
+    background-color: #fee8b6;
+    @include centrado;
+    .list_packs{
+        list-style-type: none;
+    }
+}
+
+

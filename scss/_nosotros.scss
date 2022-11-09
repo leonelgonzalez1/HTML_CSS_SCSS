@@ -1,0 +1,43 @@
+/* pagina 2 nosotros */
+
+
+.nosotros__grid{
+    display: grid;
+    grid-template-areas: 
+    "c1 c2"
+    "c3 c4"
+    ;
+
+    .cuadradoc1{
+        grid-area:c1;
+    }
+
+    .cuadradoc2{
+        grid-area:c2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: solid #9d8d86;
+    }
+
+    .cuadradoc3{
+        grid-area:c3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: solid #9d8d86;
+    }
+
+    .cuadradoc4{
+        grid-area:c4;
+    }
+
+    .nosotros__img{
+        width: 100%;
+        height: 100%;
+    }
+}

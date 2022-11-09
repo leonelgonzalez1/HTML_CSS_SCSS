@@ -1,0 +1,114 @@
+/* medias */
+
+@media (max-width:480px){
+
+    /* index */
+    header{
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        
+    }
+    .logo{
+        padding-bottom: 30px;
+        margin-right: 30px;
+        padding-bottom: 0;
+    }
+    .letras__enlace{
+        margin-right: 20px;
+    }
+/* ------------ */
+
+    .contenedor__texto{
+        height: 400px;
+        width: 100%;
+    }
+    .mejor__letras{
+        font-size: 20px;
+    }
+/* ------------ */
+
+.img__inicio{
+    width:100px ;
+    height: 100px;
+    margin: 2px;
+}
+/* ------------ */
+
+    .contenedor__texto2{
+        flex-wrap: wrap;
+    }
+    .caja__texto{
+        height: 100%;
+        padding-top: 20px;
+    }
+/* ------------ */
+
+
+.footer__texto{
+        padding:20px ;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+    /* nosotros */
+    .nosotros__grid{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        ;
+        grid-template-columns: 100%;
+    }
+    /* ------------ */
+
+    .nosotros__img{
+        height: 275px;
+    }
+    /* ------------ */
+
+    .cuadradoc2{
+        height: 300px;
+        margin-bottom: 5px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+    .cuadradoc3{
+        height: 300px;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* contacto */
+.guarda__iconos{
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* productos */
+
+
+.list__principal{
+    flex-direction: column;
+}
+
+
+.contenedor__img--principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* promociones */

@@ -1,0 +1,40 @@
+/* pagina 3 productos */
+
+.producto__ja{
+    background-color: #fee8b6;
+    
+
+    .sections{
+        color:#86380f;
+        background-color: #fee8b6;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .txt__principal{
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .list__principal{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+        .contenedor__img--principal{
+            background-color: #fee8b6;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            border-bottom: solid black 2px;
+            .principal__img{
+                background-color:#4e3b31;
+                height: 200px;
+                width: 200px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+

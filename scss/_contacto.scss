@@ -1,0 +1,51 @@
+/*pagina 4 contacto*/
+
+.contacto__t{
+    height: 200px;
+    width: 100%;
+    @include centrado;
+
+    .contacto__arriba{
+        color: #8f3f11;
+    }
+}
+
+
+    .contacto__inicio{
+    color: #8f3f11;
+    height: 700px;
+    align-items: center;
+
+    .contacto-c{
+    background-color:#4e3b31;
+    }
+
+    .prueba{
+    background-color: #4e3b31;
+    border: #372825;
+    }
+}
+/* ------------------------ */
+
+.guarda__iconos{
+    height: 250px;
+    @include centrado;
+
+    .iconos{
+        margin: 40px;
+        text-align: center;
+        color: #8f3f11;
+
+        &:hover{
+            animation: girar 1s;
+            animation-iteration-count: infinite;
+            }
+    }
+
+    .iconosw{
+        height: 50px;
+        width: 50px;
+    }
+
+}
+

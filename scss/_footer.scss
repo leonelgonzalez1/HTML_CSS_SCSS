@@ -1,0 +1,21 @@
+/* footer */
+
+footer{
+    background-color:#372825 ;
+    width: 100%;
+    height: 100%;
+    @include centrado;
+
+    .footer__texto{
+        color:bisque;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .final{
+        padding: 20px;
+    }
+    .final__texto{
+        padding: 10px;
+    }
+}
