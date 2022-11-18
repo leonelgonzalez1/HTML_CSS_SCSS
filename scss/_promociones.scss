@@ -4,11 +4,12 @@
     background-color:#fee8b6;
     height: 400px;
     @include centrado;
+
     .hola__letras{
         color:#86380f;
         font-size:60px ;
         text-align: center;
-    }
+    } 
 }
 .chau__letras{
     color:#86380f;

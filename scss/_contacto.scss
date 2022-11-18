@@ -27,8 +27,8 @@
 }
 /* ------------------------ */
 
-.guarda__iconos{
-    height: 250px;
+.guarda__ic{
+    height: 100%;
     @include centrado;
 
     .iconos{
@@ -40,12 +40,10 @@
             animation: girar 1s;
             animation-iteration-count: infinite;
             }
+        .iconosw{
+            height: 50px;
+            width: 50px;
+        }
     }
-
-    .iconosw{
-        height: 50px;
-        width: 50px;
-    }
-
 }
 
