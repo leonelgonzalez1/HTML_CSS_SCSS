@@ -63,6 +63,7 @@
 
             .final{
                 width: 100%;
+                padding: 0;
             }
             .final__texto{
                 width: 90%;
@@ -72,6 +73,7 @@
 
 /* -------------------------------------------------------------------------------------------- */
 /* nosotros */
+
 /* -------------------------------------------------------------------------------------------- */
 
 /* contacto */
@@ -93,5 +95,41 @@
     .contenedor__img--principal{
         display: flex;
         flex-wrap: wrap;
+    }
+    .nosotros__grid{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        ;
+        grid-template-columns: 100%;
+        .cuadradoc1{
+            grid-area:c1;
+        }
+        .cuadradoc2{
+            grid-area:c2;
+            height: 300px;
+            margin-bottom: 5px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+        }
+        .cuadradoc3{
+            grid-area:c3;
+            height: 300px;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+        .cuadradoc4{
+            grid-area:c4;
+        }
+    }
+    
+    .nosotros__img{
+        height: 275px;
     }
 }

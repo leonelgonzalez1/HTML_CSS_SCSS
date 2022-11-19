@@ -45,8 +45,7 @@
 
 
 /* si pego este media en el import de medias nose porque dejan de funcionar los estilos */
-@media (max-width:1100px){
-    /* nosotros */
+@media (max-width:480px){
     .nosotros__grid{
         height: 100%;
         display: grid;
@@ -57,9 +56,6 @@
         "c4"
         ;
         grid-template-columns: 100%;
-        .cuadradoc1{
-            grid-area:c1;
-        }
         .cuadradoc2{
             height: 300px;
             margin-bottom: 5px;
@@ -72,9 +68,6 @@
             border-bottom: none;
             border-left: none;
             border-right: none;
-        }
-        .cuadradoc4{
-            grid-area:c4;
         }
     }
 

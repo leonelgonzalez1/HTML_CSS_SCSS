@@ -102,6 +102,7 @@ footer .final__texto {
   }
   footer .footer__texto .final {
     width: 100%;
+    padding: 0;
   }
   footer .footer__texto .final__texto {
     width: 90%;
@@ -125,6 +126,36 @@ footer .final__texto {
   .contenedor__img--principal {
     display: flex;
     flex-wrap: wrap;
+  }
+  .nosotros__grid {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "c1" "c2" "c3" "c4";
+    grid-template-columns: 100%;
+  }
+  .nosotros__grid .cuadradoc1 {
+    grid-area: c1;
+  }
+  .nosotros__grid .cuadradoc2 {
+    grid-area: c2;
+    height: 300px;
+    margin-bottom: 5px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
+  .nosotros__grid .cuadradoc3 {
+    grid-area: c3;
+    height: 300px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  .nosotros__grid .cuadradoc4 {
+    grid-area: c4;
+  }
+  .nosotros__img {
+    height: 275px;
   }
 }
 /* keyframes */
@@ -290,16 +321,12 @@ main {
 }
 
 /* si pego este media en el import de medias nose porque dejan de funcionar los estilos */
-@media (max-width: 1100px) {
-  /* nosotros */
+@media (max-width: 480px) {
   .nosotros__grid {
     height: 100%;
     display: grid;
     grid-template-areas: "c1" "c2" "c3" "c4";
     grid-template-columns: 100%;
-  }
-  .nosotros__grid .cuadradoc1 {
-    grid-area: c1;
   }
   .nosotros__grid .cuadradoc2 {
     height: 300px;
@@ -313,9 +340,6 @@ main {
     border-bottom: none;
     border-left: none;
     border-right: none;
-  }
-  .nosotros__grid .cuadradoc4 {
-    grid-area: c4;
   }
   .nosotros__img {
     height: 275px;
@@ -442,6 +466,7 @@ main {
 }
 .pack .list_packs {
   list-style-type: none;
+  padding-left: 40px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
